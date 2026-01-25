@@ -4,7 +4,7 @@ const rows = document.querySelectorAll("table tr");
 const clearBtn = document.getElementById("clearBtn"); 
 
 // TD
-const tdOnlyModules = ["Reading & TA", "Digital Litracy", "French"];
+const tdOnlyModules = ["Reading & TA", "Digital Literacy", "French"];
 
 // count average
 btn.addEventListener("click", (e) => {
