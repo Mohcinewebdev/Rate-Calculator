@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex justify-center items-center bg-yellow-100">
+
+    <div class="">
+        <h1 class="text-3xl font-bold uppercase mx-auto w-fit mb-4">Rate Calculator L2 G07</h1>
+
+        <form action="#" method="post" class="bg-white rounded border flex w-[90%] mx-auto">
+            <div class="">
+           <table class="">
+            <tr class="text-center border-b">
+                <th class="p-2 border-r">Modules</th>
+                <th class="p-2 border-r">Coef</th>
+                <th class="p-2 border-r">Credit</th>
+                <th class="p-2 border-r">TD</th>
+                <th class="p-2 border-r">Exam</th>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Lingui & Phon</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2 "><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2 "><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Reading & TA</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="p-2 "><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Written EXP</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Grammar</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Study Skills</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Literature</td>
+                <td class="coef border-r">1</td>
+                <td class="border-r">2</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Digital Litracy</td>
+                <td class="coef border-r">1</td>
+                <td class="border-r">2</td>
+                <td class="p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Oral EXP</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+             <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">Civilization</td>
+                <td class="coef border-r">2</td>
+                <td class="border-r">4</td>
+                <td class="border-r p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                <td class="border-r p-2"><input class="exam-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+            </tr>
+            <tr class="text-center border-b font-semibold text-gray-800">
+                <td class="border-r">French</td>
+                <td class="coef border-r">1</td>
+                <td class="border-r">2</td>
+                <td class=" p-2"><input class="td-grade border w-[100%] text-center rounded" type="number" max="20" min="0"></td>
+                
+            </tr>
+           </table> 
+           <div class="flex justify-between mx-4 p-2 items-center">
+
+            <!-- Final average -->
+        <div id="final-avg" class="">
+            
+        </div>
+
+           <button id="btn" class="px-4 py-2 bg-yellow-200 rounded-lg font-semibold duration-300 hover:bg-yellow-300">Submit</button>
+           </div>
+           </div>
+        </form>
+        <div class="flex justify-center mt-2 mb-6">
+        <button id="clearBtn" class="px-4 py-2 bg-red-200 rounded-lg font-semibold hover:bg-red-300 duration-300">
+         Clear Form
+        </button>
+       </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
