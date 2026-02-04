@@ -92,3 +92,31 @@ clearBtn.addEventListener("click", () => {
   finalAvgDiv.textContent = "";
 });
 
+
+
+// Function to update color based on value
+function updateInputColor(input) {
+  const value = Number(input.value);
+  if (input.value === "") {
+    input.style.backgroundColor = ""; // no color if empty
+  } else if (value >= 10) {
+    input.style.backgroundColor = "lightgreen";
+    input.style.color = "darkgreen";
+  } else {
+    input.style.backgroundColor = "rgb(255, 128, 128)";
+    input.style.color = "rgb(122, 9, 9)";
+  }
+}
+
+// Apply to all TD and Exam inputs
+rows.forEach((row, index) => {
+  if (index === 0) return;
+
+  const tdInput = row.querySelector(".td-grade");
+  const examInput = row.querySelector(".exam-grade");
+
+  tdInput.addEventListener("input", () => updateInputColor(tdInput));
+  if (examInput) {
+    examInput.addEventListener("input", () => updateInputColor(examInput));
+  }
+});
